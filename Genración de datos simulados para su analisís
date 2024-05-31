@@ -1,0 +1,21 @@
+import numpy as np
+from datetime import datetime, timedelta
+
+# Generar datos de ventas simulados
+np.random.seed(42)
+num_ventas = 1000
+producto_ids = range(1, 51)
+cliente_ids = clientes_df['cliente_id'].tolist()
+fechas_ventas = [datetime(2023, 1, 1) + timedelta(days=np.random.randint(0, 365)) for _ in range(num_ventas)]
+
+ventas_df = pd.DataFrame({
+    'venta_id': range(1, num_ventas + 1),
+    'producto_id': np.random.choice(producto_ids, num_ventas),
+    'cliente_id': np.random.choice(cliente_ids, num_ventas),
+    'fecha_venta': fechas_ventas,
+    'cantidad_venta': np.random.randint(1, 10, num_ventas),
+    'precio_unitario': np.random.uniform(10, 1000, num_ventas).round(2)
+})
+
+ventas_df['revenue'] = ventas_df['cantidad_venta'] * ventas_df['precio_unitario']
+print(ventas_df.head())
