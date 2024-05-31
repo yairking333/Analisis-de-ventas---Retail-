@@ -1,0 +1,13 @@
+# Unir datos de productos
+ventas_con_productos = ventas_df.merge(productos_df, on='producto_id')
+
+# Agrupar ingresos por categoría
+ingresos_por_categoria = ventas_con_productos.groupby('categoria')['revenue'].sum().reset_index()
+
+# Graficar ingresos por categoría
+plt.figure(figsize=(12, 6))
+sns.barplot(x='revenue', y='categoria', data=ingresos_por_categoria)
+plt.title('Ingresos por Categoría de Producto')
+plt.xlabel('Ingresos')
+plt.ylabel('Categoría')
+plt.show()
