@@ -1,0 +1,24 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+ventas_df = pd.read_csv('ventas.csv')
+
+
+plt.figure(figsize=(12, 6))
+
+# Distribución de precios unitarios
+plt.subplot(1, 2, 1)
+sns.histplot(ventas_df['precio_unitario'], kde=True)
+plt.title('Distribución de Precios Unitarios')
+plt.xlabel('Precio Unitario')
+
+# Distribución de cantidades vendidas
+plt.subplot(1, 2, 2)
+sns.histplot(ventas_df['cantidad_venta'], kde=True)
+plt.title('Distribución de Cantidades Vendidas')
+plt.xlabel('Cantidad Vendida')
+
+plt.tight_layout()
+plt.show()
