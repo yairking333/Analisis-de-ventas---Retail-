@@ -1,0 +1,14 @@
+# Convertir 'fecha_venta' a datetime
+ventas_df['fecha_venta'] = pd.to_datetime(ventas_df['fecha_venta'])
+
+# Agrupar ingresos por mes
+ingresos_mensuales = ventas_df.set_index('fecha_venta').resample('M')['revenue'].sum()
+
+# Graficar serie temporal
+plt.figure(figsize=(12, 6))
+ingresos_mensuales.plot()
+plt.title('Ingresos Mensuales a lo Largo del Tiempo')
+plt.xlabel('Fecha')
+plt.ylabel('Ingresos')
+plt.grid(True)
+plt.show()
