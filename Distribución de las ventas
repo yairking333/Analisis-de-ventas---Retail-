@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Distribución de las ventas
+sns.histplot(ventas_df['cantidad_venta'], kde=True)
+plt.title('Distribución de las Ventas')
+plt.show()
+
+# Ventas por región
+ventas_por_region = ventas_df.groupby('region')['cantidad_venta'].sum().reset_index()
+sns.barplot(x='region', y='cantidad_venta', data=ventas_por_region)
+plt.title('Ventas por Región')
+plt.show()
+
+# Productos más vendidos
+productos_mas_vendidos = ventas_df.groupby('producto_id')['cantidad_venta'].sum().nlargest(10).reset_index()
+productos_mas_vendidos = productos_mas_vendidos.merge(productos_df, on='producto_id')
+sns.barplot(x='cantidad_venta', y='nombre_producto', data=productos_mas_vendidos)
+plt.title('Productos Más Vendidos')
+plt.show()
