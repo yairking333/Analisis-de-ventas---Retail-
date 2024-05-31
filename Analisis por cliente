@@ -1,0 +1,15 @@
+# Analizar ingresos por cliente
+ingresos_por_cliente = ventas_merged.groupby('cliente_id')['revenue'].sum().reset_index()
+ingresos_por_cliente = ingresos_por_cliente.merge(clientes_df, on='cliente_id')
+
+# Identificar los 10 clientes más rentables
+top_clientes = ingresos_por_cliente.nlargest(10, 'revenue')
+print(top_clientes[['cliente_id', 'nombre_cliente', 'revenue']])
+
+# Graficar los ingresos de los 10 clientes más rentables
+plt.figure(figsize=(10, 6))
+sns.barplot(x='revenue', y='nombre_cliente', data=top_clientes)
+plt.title('Top 10 Clientes Más Rentables')
+plt.xlabel('Ingresos')
+plt.ylabel('Cliente')
+plt.show()
