@@ -1,0 +1,20 @@
+# Comparar los valores reales con las predicciones
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred, alpha=0.3)
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'k--', lw=2)
+plt.xlabel('Valores Reales')
+plt.ylabel('Predicciones')
+plt.title('Comparación entre Valores Reales y Predicciones')
+plt.show()
+
+# Visualizar la importancia de las características
+importances = modelo.feature_importances_
+features = X.columns
+indices = np.argsort(importances)
+
+plt.figure(figsize=(10, 6))
+plt.title('Importancia de las Características')
+plt.barh(range(len(indices)), importances[indices], align='center')
+plt.yticks(range(len(indices)), [features[i] for i in indices])
+plt.xlabel('Importancia Relativa')
+plt.show()
