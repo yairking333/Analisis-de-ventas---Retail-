@@ -1,0 +1,8 @@
+import pandas as pd
+
+# Cargar datos de clientes y productos
+clientes_df = pd.read_csv('clientes.csv')
+productos_df = pd.read_csv('productos.csv')
+
+# Verificar que la columna 'region' existe en clientes_df
+print(clientes_df.head())
