@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Agrupar ingresos por región y producto
+try:
+    ingresos_por_region_producto = ventas_con_productos_clientes.groupby(['region', 'nombre_producto'])['revenue'].sum().unstack().fillna(0)
+
+    # Graficar mapa de calor
+    plt.figure(figsize=(14, 8))
+    sns.heatmap(ingresos_por_region_producto, cmap='viridis', annot=True, fmt='.1f')
+    plt.title('Mapa de Calor de Ventas por Región y Producto')
+    plt.xlabel('Producto')
+    plt.ylabel('Región')
+    plt.show()
+except KeyError as e:
+    print(f"Error: {e}. Asegúrate de que la columna 'region' existe en los datos unidos.")
