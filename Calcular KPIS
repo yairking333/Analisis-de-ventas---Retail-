@@ -1,0 +1,23 @@
+ventas_merged_actualizado = pd.DataFrame({
+    'revenue': [100, 200, 300, 400],
+    'cliente_id': [1, 2, 2, 3],
+    'cantidad_venta': [1, 2, 2, 1]
+})
+
+# Suponiendo que tienes una función para calcular KPIs
+def calcular_kpis(ventas_merged):
+    kpis = {}
+    kpis['ingresos_totales'] = ventas_merged['revenue'].sum()
+    kpis['ingresos_promedio_por_cliente'] = ventas_merged.groupby('cliente_id')['revenue'].sum().mean()
+    kpis['productos_vendidos_totales'] = ventas_merged['cantidad_venta'].sum()
+    return kpis
+
+# Calcular KPIs antes y después de implementar estrategias
+kpis_antes = calcular_kpis(ventas_merged)
+# ... implementar estrategias ...
+# Actualizar datos de ventas y calcular nuevamente
+kpis_despues = calcular_kpis(ventas_merged_actualizado)
+
+# Comparar KPIs
+print(f"KPIs antes: {kpis_antes}")
+print(f"KPIs después: {kpis_despues}")
