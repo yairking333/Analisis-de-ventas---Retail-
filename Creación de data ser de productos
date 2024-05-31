@@ -1,0 +1,20 @@
+mport pandas as pd
+import numpy as np
+
+# Parámetros
+num_productos = 50
+categorias = ['Electrónica', 'Software', 'Hardware', 'Accesorios', 'Servicios']
+
+# Crear DataFrame de productos
+productos = pd.DataFrame({
+    'producto_id': range(1, num_productos + 1),
+    'nombre_producto': [f'Producto_{i}' for i in range(1, num_productos + 1)],
+    'categoria': np.random.choice(categorias, size=num_productos),
+    'precio_base': np.random.uniform(10, 1000, size=num_productos).round(2),
+    'stock': np.random.randint(1, 500, size=num_productos)
+})
+
+# Guardar a CSV
+productos.to_csv('productos.csv', index=False)
+
+print("Archivo 'productos.csv' creado con éxito.")
