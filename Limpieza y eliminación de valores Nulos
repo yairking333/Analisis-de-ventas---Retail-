@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Cargar los datos
+ventas_df = pd.read_csv('ventas.csv')
+productos_df = pd.read_csv('productos.csv')
+clientes_df = pd.read_csv('clientes.csv')
+
+# Limpiar los datos
+# Eliminar valores nulos
+ventas_df.dropna(inplace=True)
+productos_df.dropna(inplace=True)
+clientes_df.dropna(inplace=True)
+
+# Verificar datos duplicados
+ventas_df.drop_duplicates(inplace=True)
+productos_df.drop_duplicates(inplace=True)
+clientes_df.drop_duplicates(inplace=True)
