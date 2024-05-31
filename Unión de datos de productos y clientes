@@ -1,0 +1,5 @@
+# Unir datos de productos y clientes
+ventas_con_productos_clientes = ventas_df.merge(productos_df, on='producto_id').merge(clientes_df, on='cliente_id')
+
+# Verificar que la columna 'region' existe después de la unión
+print(ventas_con_productos_clientes.head())
