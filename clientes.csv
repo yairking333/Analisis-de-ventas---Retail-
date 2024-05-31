@@ -1,0 +1,201 @@
+cliente_id,nombre_cliente,pais,industria,fecha_registro
+1,Cliente_1,Brasil,Finanzas,2020-10-05
+2,Cliente_2,Alemania,Manufactura,2015-06-29
+3,Cliente_3,Japón,Salud,2015-08-20
+4,Cliente_4,Japón,Finanzas,2020-04-01
+5,Cliente_5,Brasil,Tecnología,2015-12-09
+6,Cliente_6,Japón,Finanzas,2016-04-21
+7,Cliente_7,Estados Unidos,Salud,2019-12-28
+8,Cliente_8,Estados Unidos,Tecnología,2022-03-08
+9,Cliente_9,Estados Unidos,Educación,2016-03-30
+10,Cliente_10,Japón,Tecnología,2018-06-09
+11,Cliente_11,Estados Unidos,Educación,2015-10-16
+12,Cliente_12,Brasil,Tecnología,2018-05-21
+13,Cliente_13,Japón,Salud,2021-04-24
+14,Cliente_14,Sudáfrica,Salud,2016-06-13
+15,Cliente_15,Japón,Tecnología,2022-06-27
+16,Cliente_16,Brasil,Finanzas,2023-02-24
+17,Cliente_17,Sudáfrica,Salud,2021-03-26
+18,Cliente_18,Japón,Educación,2016-08-18
+19,Cliente_19,Estados Unidos,Educación,2016-03-10
+20,Cliente_20,Alemania,Manufactura,2017-05-31
+21,Cliente_21,Alemania,Educación,2023-05-27
+22,Cliente_22,Estados Unidos,Manufactura,2019-11-17
+23,Cliente_23,Alemania,Tecnología,2016-02-06
+24,Cliente_24,Alemania,Tecnología,2022-04-23
+25,Cliente_25,Estados Unidos,Tecnología,2020-11-05
+26,Cliente_26,Estados Unidos,Finanzas,2022-03-16
+27,Cliente_27,Japón,Finanzas,2019-04-15
+28,Cliente_28,Japón,Manufactura,2015-11-05
+29,Cliente_29,Estados Unidos,Educación,2023-02-01
+30,Cliente_30,Brasil,Educación,2015-12-09
+31,Cliente_31,Alemania,Tecnología,2016-03-11
+32,Cliente_32,Japón,Salud,2015-06-26
+33,Cliente_33,Alemania,Finanzas,2015-05-19
+34,Cliente_34,Sudáfrica,Finanzas,2015-07-13
+35,Cliente_35,Estados Unidos,Tecnología,2023-12-02
+36,Cliente_36,Brasil,Finanzas,2023-11-10
+37,Cliente_37,Sudáfrica,Tecnología,2018-03-30
+38,Cliente_38,Sudáfrica,Manufactura,2017-07-31
+39,Cliente_39,Sudáfrica,Educación,2016-06-08
+40,Cliente_40,Estados Unidos,Salud,2019-06-13
+41,Cliente_41,Japón,Educación,2023-07-11
+42,Cliente_42,Estados Unidos,Educación,2023-02-10
+43,Cliente_43,Japón,Manufactura,2021-03-07
+44,Cliente_44,Sudáfrica,Finanzas,2017-01-10
+45,Cliente_45,Sudáfrica,Salud,2017-05-11
+46,Cliente_46,Brasil,Finanzas,2017-08-11
+47,Cliente_47,Japón,Educación,2018-07-26
+48,Cliente_48,Sudáfrica,Tecnología,2018-06-28
+49,Cliente_49,Alemania,Educación,2019-10-10
+50,Cliente_50,Brasil,Finanzas,2022-11-20
+51,Cliente_51,Estados Unidos,Educación,2020-12-27
+52,Cliente_52,Brasil,Tecnología,2017-03-02
+53,Cliente_53,Alemania,Manufactura,2016-06-29
+54,Cliente_54,Japón,Finanzas,2020-01-19
+55,Cliente_55,Estados Unidos,Educación,2017-10-13
+56,Cliente_56,Estados Unidos,Finanzas,2020-04-11
+57,Cliente_57,Japón,Manufactura,2019-04-03
+58,Cliente_58,Brasil,Educación,2015-02-26
+59,Cliente_59,Sudáfrica,Educación,2020-11-29
+60,Cliente_60,Brasil,Finanzas,2015-01-05
+61,Cliente_61,Alemania,Finanzas,2018-12-08
+62,Cliente_62,Sudáfrica,Tecnología,2023-11-28
+63,Cliente_63,Brasil,Manufactura,2023-06-12
+64,Cliente_64,Japón,Tecnología,2018-09-24
+65,Cliente_65,Alemania,Educación,2019-12-26
+66,Cliente_66,Alemania,Finanzas,2018-07-06
+67,Cliente_67,Alemania,Educación,2020-11-07
+68,Cliente_68,Sudáfrica,Educación,2022-04-17
+69,Cliente_69,Estados Unidos,Salud,2023-01-17
+70,Cliente_70,Sudáfrica,Salud,2022-07-08
+71,Cliente_71,Brasil,Educación,2018-06-27
+72,Cliente_72,Estados Unidos,Finanzas,2023-01-24
+73,Cliente_73,Brasil,Educación,2023-04-07
+74,Cliente_74,Estados Unidos,Salud,2018-02-05
+75,Cliente_75,Sudáfrica,Finanzas,2016-10-29
+76,Cliente_76,Alemania,Educación,2022-03-26
+77,Cliente_77,Japón,Manufactura,2022-03-21
+78,Cliente_78,Alemania,Manufactura,2021-12-07
+79,Cliente_79,Sudáfrica,Educación,2023-04-18
+80,Cliente_80,Estados Unidos,Finanzas,2023-04-08
+81,Cliente_81,Alemania,Educación,2018-07-05
+82,Cliente_82,Sudáfrica,Educación,2022-05-10
+83,Cliente_83,Brasil,Salud,2017-09-23
+84,Cliente_84,Japón,Manufactura,2020-04-10
+85,Cliente_85,Alemania,Salud,2015-10-09
+86,Cliente_86,Estados Unidos,Salud,2023-04-22
+87,Cliente_87,Brasil,Educación,2023-08-26
+88,Cliente_88,Sudáfrica,Salud,2018-05-12
+89,Cliente_89,Japón,Manufactura,2020-08-25
+90,Cliente_90,Estados Unidos,Salud,2023-10-28
+91,Cliente_91,Sudáfrica,Manufactura,2017-07-24
+92,Cliente_92,Sudáfrica,Salud,2015-09-11
+93,Cliente_93,Alemania,Manufactura,2018-04-26
+94,Cliente_94,Alemania,Salud,2015-11-25
+95,Cliente_95,Estados Unidos,Salud,2022-02-04
+96,Cliente_96,Sudáfrica,Finanzas,2022-10-01
+97,Cliente_97,Alemania,Manufactura,2023-05-03
+98,Cliente_98,Japón,Manufactura,2018-11-21
+99,Cliente_99,Japón,Manufactura,2019-03-21
+100,Cliente_100,Sudáfrica,Tecnología,2022-12-02
+101,Cliente_101,Alemania,Salud,2018-04-07
+102,Cliente_102,Estados Unidos,Manufactura,2019-09-13
+103,Cliente_103,Estados Unidos,Tecnología,2021-08-10
+104,Cliente_104,Estados Unidos,Finanzas,2018-04-16
+105,Cliente_105,Japón,Manufactura,2016-10-16
+106,Cliente_106,Alemania,Manufactura,2018-10-17
+107,Cliente_107,Alemania,Tecnología,2017-01-29
+108,Cliente_108,Japón,Salud,2022-05-10
+109,Cliente_109,Estados Unidos,Finanzas,2019-12-04
+110,Cliente_110,Estados Unidos,Manufactura,2017-11-29
+111,Cliente_111,Sudáfrica,Salud,2023-02-19
+112,Cliente_112,Brasil,Finanzas,2016-02-20
+113,Cliente_113,Alemania,Educación,2015-09-12
+114,Cliente_114,Alemania,Educación,2018-03-12
+115,Cliente_115,Alemania,Finanzas,2020-02-20
+116,Cliente_116,Brasil,Tecnología,2022-07-20
+117,Cliente_117,Sudáfrica,Finanzas,2022-03-09
+118,Cliente_118,Brasil,Finanzas,2017-06-18
+119,Cliente_119,Estados Unidos,Tecnología,2020-08-20
+120,Cliente_120,Estados Unidos,Tecnología,2015-01-26
+121,Cliente_121,Alemania,Salud,2023-03-24
+122,Cliente_122,Japón,Salud,2016-02-25
+123,Cliente_123,Alemania,Tecnología,2018-05-29
+124,Cliente_124,Japón,Educación,2020-02-20
+125,Cliente_125,Brasil,Educación,2021-12-18
+126,Cliente_126,Estados Unidos,Finanzas,2018-06-14
+127,Cliente_127,Japón,Manufactura,2021-04-03
+128,Cliente_128,Brasil,Finanzas,2017-10-05
+129,Cliente_129,Estados Unidos,Finanzas,2015-08-07
+130,Cliente_130,Japón,Manufactura,2019-02-19
+131,Cliente_131,Alemania,Tecnología,2020-05-13
+132,Cliente_132,Alemania,Educación,2021-11-13
+133,Cliente_133,Alemania,Finanzas,2016-10-24
+134,Cliente_134,Brasil,Manufactura,2022-05-06
+135,Cliente_135,Alemania,Salud,2023-10-21
+136,Cliente_136,Sudáfrica,Finanzas,2017-09-16
+137,Cliente_137,Estados Unidos,Educación,2015-07-08
+138,Cliente_138,Brasil,Tecnología,2015-09-12
+139,Cliente_139,Alemania,Finanzas,2015-03-09
+140,Cliente_140,Estados Unidos,Finanzas,2016-09-07
+141,Cliente_141,Japón,Manufactura,2021-07-11
+142,Cliente_142,Alemania,Salud,2022-06-11
+143,Cliente_143,Estados Unidos,Salud,2022-11-08
+144,Cliente_144,Sudáfrica,Tecnología,2017-05-23
+145,Cliente_145,Japón,Educación,2021-06-05
+146,Cliente_146,Sudáfrica,Tecnología,2019-06-14
+147,Cliente_147,Estados Unidos,Finanzas,2015-12-23
+148,Cliente_148,Sudáfrica,Finanzas,2015-09-13
+149,Cliente_149,Estados Unidos,Salud,2017-10-04
+150,Cliente_150,Estados Unidos,Educación,2021-07-28
+151,Cliente_151,Sudáfrica,Manufactura,2019-10-22
+152,Cliente_152,Estados Unidos,Educación,2022-01-15
+153,Cliente_153,Alemania,Finanzas,2023-03-17
+154,Cliente_154,Estados Unidos,Manufactura,2022-09-04
+155,Cliente_155,Brasil,Educación,2015-10-11
+156,Cliente_156,Estados Unidos,Educación,2015-04-09
+157,Cliente_157,Brasil,Manufactura,2015-07-16
+158,Cliente_158,Estados Unidos,Finanzas,2021-12-04
+159,Cliente_159,Estados Unidos,Educación,2017-05-27
+160,Cliente_160,Sudáfrica,Manufactura,2020-02-12
+161,Cliente_161,Alemania,Finanzas,2022-04-16
+162,Cliente_162,Alemania,Manufactura,2022-04-19
+163,Cliente_163,Japón,Manufactura,2018-10-20
+164,Cliente_164,Sudáfrica,Educación,2021-08-12
+165,Cliente_165,Sudáfrica,Finanzas,2016-07-23
+166,Cliente_166,Alemania,Educación,2022-03-22
+167,Cliente_167,Sudáfrica,Tecnología,2023-08-13
+168,Cliente_168,Alemania,Tecnología,2017-12-01
+169,Cliente_169,Sudáfrica,Finanzas,2016-02-26
+170,Cliente_170,Estados Unidos,Manufactura,2022-11-23
+171,Cliente_171,Alemania,Educación,2018-04-19
+172,Cliente_172,Alemania,Educación,2016-06-28
+173,Cliente_173,Brasil,Finanzas,2015-03-12
+174,Cliente_174,Sudáfrica,Finanzas,2023-09-12
+175,Cliente_175,Sudáfrica,Tecnología,2018-05-08
+176,Cliente_176,Alemania,Salud,2023-09-08
+177,Cliente_177,Estados Unidos,Finanzas,2017-02-06
+178,Cliente_178,Estados Unidos,Salud,2021-06-12
+179,Cliente_179,Estados Unidos,Finanzas,2019-09-03
+180,Cliente_180,Sudáfrica,Manufactura,2021-08-21
+181,Cliente_181,Brasil,Manufactura,2016-10-16
+182,Cliente_182,Alemania,Tecnología,2022-06-18
+183,Cliente_183,Japón,Tecnología,2021-09-12
+184,Cliente_184,Brasil,Salud,2019-12-02
+185,Cliente_185,Japón,Finanzas,2015-08-09
+186,Cliente_186,Brasil,Educación,2015-07-01
+187,Cliente_187,Estados Unidos,Tecnología,2015-11-03
+188,Cliente_188,Sudáfrica,Educación,2022-01-13
+189,Cliente_189,Japón,Educación,2018-11-20
+190,Cliente_190,Brasil,Finanzas,2017-10-10
+191,Cliente_191,Sudáfrica,Salud,2020-08-13
+192,Cliente_192,Japón,Finanzas,2022-12-20
+193,Cliente_193,Alemania,Tecnología,2017-04-27
+194,Cliente_194,Brasil,Educación,2017-03-14
+195,Cliente_195,Alemania,Finanzas,2015-08-03
+196,Cliente_196,Estados Unidos,Finanzas,2023-04-08
+197,Cliente_197,Alemania,Finanzas,2018-12-14
+198,Cliente_198,Alemania,Tecnología,2015-04-11
+199,Cliente_199,Brasil,Salud,2023-03-30
+200,Cliente_200,Estados Unidos,Finanzas,2016-07-26
