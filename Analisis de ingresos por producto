@@ -1,0 +1,15 @@
+# Analizar ingresos por producto
+ingresos_por_producto = ventas_merged.groupby('producto_id')['revenue'].sum().reset_index()
+ingresos_por_producto = ingresos_por_producto.merge(productos_df, on='producto_id')
+
+# Identificar los 10 productos más rentables
+top_productos = ingresos_por_producto.nlargest(10, 'revenue')
+print(top_productos[['producto_id', 'nombre_producto', 'revenue']])
+
+# Graficar los ingresos de los 10 productos más rentables
+plt.figure(figsize=(10, 6))
+sns.barplot(x='revenue', y='nombre_producto', data=top_productos)
+plt.title('Top 10 Productos Más Rentables')
+plt.xlabel('Ingresos')
+plt.ylabel('Producto')
+plt.show()
