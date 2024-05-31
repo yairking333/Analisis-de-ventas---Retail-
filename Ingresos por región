@@ -1,0 +1,10 @@
+# Analizar ingresos por región
+ingresos_por_region = ventas_merged.groupby('region')['revenue'].sum().reset_index()
+
+# Graficar ingresos por región
+plt.figure(figsize=(10, 6))
+sns.barplot(x='revenue', y='region', data=ingresos_por_region)
+plt.title('Ingresos por Región')
+plt.xlabel('Ingresos')
+plt.ylabel('Región')
+plt.show()
