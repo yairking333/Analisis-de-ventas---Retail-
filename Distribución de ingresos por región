@@ -1,0 +1,9 @@
+if 'region' in ventas_con_productos_clientes.columns:
+    plt.figure(figsize=(12, 6))
+    sns.boxplot(x='region', y='revenue', data=ventas_con_productos_clientes)
+    plt.title('Distribución de Ingresos por Región')
+    plt.xlabel('Región')
+    plt.ylabel('Ingresos')
+    plt.show()
+else:
+    print("The 'region' column is missing in ventas_con_productos_clientes DataFrame.")
