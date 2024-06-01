@@ -1,0 +1,14 @@
+# Graficar tendencias de ventas antes y después
+ventas_totales['periodo'] = np.where(ventas_totales['fecha_venta'] < fecha_corte, 'Antes', 'Después')
+
+# Agrupar por mes y periodo
+ventas_mensuales = ventas_totales.groupby([pd.Grouper(key='fecha_venta', freq='M'), 'periodo'])['revenue'].sum().reset_index()
+
+# Graficar
+plt.figure(figsize=(12, 6))
+sns.lineplot(x='fecha_venta', y='revenue', hue='periodo', data=ventas_mensuales, marker='o')
+plt.title('Tendencias de Ventas Mensuales Antes y Después de Implementar Estrategias')
+plt.xlabel('Fecha')
+plt.ylabel('Ingresos')
+plt.grid(True)
+plt.show()
