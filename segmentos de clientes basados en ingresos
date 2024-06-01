@@ -1,0 +1,24 @@
+# Crear segmentos de clientes basados en ingresos
+ingresos_por_cliente = ventas_df.groupby('cliente_id')['revenue'].sum().reset_index()
+ingresos_por_cliente['segmento'] = pd.qcut(ingresos_por_cliente['revenue'], q=4, labels=['Bajo', 'Medio-Bajo', 'Medio-Alto', 'Alto'])
+
+# Unir con datos de clientes
+clientes_segmentados = ingresos_por_cliente.merge(clientes_df, on='cliente_id')
+
+# Graficar la distribución de clientes por segmento
+plt.figure(figsize=(12, 6))
+sns.countplot(x='segmento', data=clientes_segmentados, palette='viridis')
+plt.title('Distribución de Clientes por Segmento de Ingresos')
+plt.xlabel('Segmento')
+plt.ylabel('Cantidad de Clientes')
+plt.show()
+
+# Graficar ingresos promedio por segmento
+ingresos_promedio_por_segmento = clientes_segmentados.groupby('segmento')['revenue'].mean().reset_index()
+
+plt.figure(figsize=(12, 6))
+sns.barplot(x='segmento', y='revenue', data=ingresos_promedio_por_segmento, palette='viridis')
+plt.title('Ingresos Promedio por Segmento de Clientes')
+plt.xlabel('Segmento')
+plt.ylabel('Ingresos Promedio')
+plt.show()
