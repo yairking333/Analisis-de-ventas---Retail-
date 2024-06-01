@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Preparar los datos para graficar
+kpis_df = pd.DataFrame({
+    'KPI': ['Ingresos Totales', 'Ingresos Promedio por Cliente', 'Productos Vendidos Totales'],
+    'Antes': [kpis_antes['ingresos_totales'], kpis_antes['ingresos_promedio_por_cliente'], kpis_antes['productos_vendidos_totales']],
+    'Después': [kpis_despues['ingresos_totales'], kpis_despues['ingresos_promedio_por_cliente'], kpis_despues['productos_vendidos_totales']]
+})
+
+# Convertir a formato largo para seaborn
+kpis_long_df = kpis_df.melt(id_vars='KPI', value_vars=['Antes', 'Después'], var_name='Periodo', value_name='Valor')
+
+# Graficar los KPIs antes y después
+plt.figure(figsize=(12, 8))
+sns.barplot(x='KPI', y='Valor', hue='Periodo', data=kpis_long_df)
+plt.title('Comparación de KPIs Antes y Después de Implementar Estrategias')
+plt.xlabel('KPI')
+plt.ylabel('Valor')
+plt.show()
