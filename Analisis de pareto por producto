@@ -1,0 +1,16 @@
+# Ingresos por producto
+ingresos_por_producto = ventas_totales.groupby('producto_id')['revenue'].sum().sort_values(ascending=False).reset_index()
+
+# Calcular el porcentaje acumulado
+ingresos_por_producto['perc_acumulado'] = ingresos_por_producto['revenue'].cumsum() / ingresos_por_producto['revenue'].sum()
+
+# Graficar Pareto
+plt.figure(figsize=(12, 6))
+sns.barplot(x='producto_id', y='revenue', data=ingresos_por_producto.head(20), color='b')
+plt.ylabel('Ingresos')
+plt.twinx()
+sns.lineplot(x='producto_id', y='perc_acumulado', data=ingresos_por_producto.head(20), color='r', marker='o')
+plt.title('Análisis de Pareto de Ingresos por Producto')
+plt.xlabel('Producto ID')
+plt.ylabel('Porcentaje Acumulado')
+plt.show()
